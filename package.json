@@ -1,0 +1,36 @@
+{
+  "name": "diffr",
+  "version": "1.0.0",
+  "description": "CLI diff tool for files, text, and JSON with human readable output.",
+  "main": "diffr.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "diffr": "./diffr.js"
+  },
+  "keywords": [
+    "diff",
+    "tool",
+    "json",
+    "file",
+    "binary",
+    "string",
+    "text",
+    "unix",
+    "cli",
+    "diffing",
+    "differ",
+    "request",
+    "response",
+    "curl",
+    "http"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.0.3",
+    "commander": "^2.7.1",
+    "line-diff": "^1.0.0"
+  }
+}
