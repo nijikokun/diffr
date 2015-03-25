@@ -49,6 +49,18 @@ $ diffr diffr.js package.json
 
 ```bash
 $ diffr <(curl -Is https://httpbin.org/ip  2>&1) <(curl -Is https://httpbin.org  2>&1)
+
+   HTTP/1.1 200 OK
+   Server: nginx
+   Date: Wed, 25 Mar 2015 07:10:56 GMT
+ - Content-Type: text/html; charset=utf-8
+ + Content-Type: application/json
+ - Content-Length: 11729
+ + Content-Length: 32
+   Connection: keep-alive
+   Access-Control-Allow-Origin: *
+   Access-Control-Allow-Credentials: true
+
 ```
 
 ## License
