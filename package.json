@@ -1,6 +1,6 @@
 {
   "name": "diffr",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "CLI diff tool for files, text, and JSON with human readable output.",
   "main": "diffr.js",
   "scripts": {
@@ -29,6 +29,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "cli-table": "^0.3.1",
     "colors": "^1.0.3",
     "commander": "^2.7.1",
     "line-diff": "^1.0.0"

@@ -21,6 +21,7 @@ npm install diffr -g
     -t, --text [value]   Add text string to be diff'd
     -j, --json [string]  Add json string to be diff'd
     -f, --file <file>    Add file to be diff'd
+    -c, --column         Columnized output
 
 ```
 
@@ -61,6 +62,21 @@ $ diffr <(curl -Is https://httpbin.org/ip  2>&1) <(curl -Is https://httpbin.org 
    Access-Control-Allow-Origin: *
    Access-Control-Allow-Credentials: true
 
+```
+
+**Columnized Output**
+
+```bash
+ᐅ ./diffr.js -c <(curl -Is https://httpbin.org/ip  2>&1) <(curl -Is https://httpbin.org  2>&1)
+
+   HTTP/1.1 200 OK                            HTTP/1.1 200 OK
+   Server: nginx                              Server: nginx
+   Date: Wed, 25 Mar 2015 18:29:37 GMT        Date: Wed, 25 Mar 2015 18:29:37 GMT
+ - Content-Type: text/html; charset=utf-8   + Content-Type: application/json
+ - Content-Length: 11729                    + Content-Length: 32
+   Connection: keep-alive                     Connection: keep-alive
+   Access-Control-Allow-Origin: *             Access-Control-Allow-Origin: *
+   Access-Control-Allo
 ```
 
 ## License
